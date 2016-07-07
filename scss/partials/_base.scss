@@ -1,0 +1,19 @@
+body {
+  font-family: $primary-font;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.active {
+  color: $accent-color;
+}
+@media screen and (min-width: 860px) {
+  .wrapper {
+    width: 890px;
+  }
+}

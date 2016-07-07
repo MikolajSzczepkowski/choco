@@ -1,0 +1,9 @@
+@mixin boxGradient($colorFrom, $colorTo) {
+  background: $colorFrom;
+  background: -moz-linear-gradient(top, $colorFrom 0%, $colorTo 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, $colorFrom), color-stop(100%, $colorTo));
+  background: -webkit-linear-gradient(top, $colorFrom 0%, $colorTo 100%);
+  background: -o-linear-gradient(top, $colorFrom 0%, $colorTo 100%);
+  background: -ms-linear-gradient(top, $colorFrom 0%, $colorTo 100%);
+  background: linear-gradient(to bottom, $colorFrom 0%, $colorTo 100%);
+}

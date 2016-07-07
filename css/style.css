@@ -1,0 +1,323 @@
+/* Eric Meyer's CSS Reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   This is a Sass partial
+*/
+/* line 8, /home/mikolaj/Documents/coderslab/choco/scss/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 29, /home/mikolaj/Documents/coderslab/choco/scss/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, /home/mikolaj/Documents/coderslab/choco/scss/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 36, /home/mikolaj/Documents/coderslab/choco/scss/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 39, /home/mikolaj/Documents/coderslab/choco/scss/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, /home/mikolaj/Documents/coderslab/choco/scss/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, /home/mikolaj/Documents/coderslab/choco/scss/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, /home/mikolaj/Documents/coderslab/choco/scss/partials/_base.scss */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* line 4, /home/mikolaj/Documents/coderslab/choco/scss/partials/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 7, /home/mikolaj/Documents/coderslab/choco/scss/partials/_base.scss */
+.wrapper {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 12, /home/mikolaj/Documents/coderslab/choco/scss/partials/_base.scss */
+.active {
+  color: #45add8;
+}
+
+@media screen and (min-width: 860px) {
+  /* line 16, /home/mikolaj/Documents/coderslab/choco/scss/partials/_base.scss */
+  .wrapper {
+    width: 890px;
+  }
+}
+
+/* line 1, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+header {
+  position: relative;
+  background: #000;
+}
+
+/* line 4, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+header .logo, header .bubble-wrapper, header nav {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 9, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.logo {
+  position: relative;
+  top: 100px;
+  height: 82px;
+  background-image: url("../img/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 17, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.bubble-wrapper {
+  position: relative;
+  padding: 150px 0 0 0;
+}
+
+/* line 20, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.bubble-wrapper .bubble {
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* line 25, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.bubble-wrapper div.bubble {
+  position: absolute;
+  display: inline-block;
+  top: -211px;
+  width: 240px;
+  height: 222px;
+}
+
+/* line 32, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.bubble-wrapper span.bubble {
+  display: inline-block;
+  top: -200px;
+  left: 230px;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px 0 0;
+}
+
+/* line 40, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.bubble-wrapper span.bubble:nth-of-type(2) {
+  top: -208px;
+  width: 17px;
+  height: 17px;
+}
+
+/* line 45, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.bubble-wrapper span.bubble:nth-of-type(3) {
+  top: -214px;
+  width: 12px;
+  height: 12px;
+}
+
+/* line 50, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.bubble-wrapper .bubble-content {
+  position: relative;
+  display: inline-block;
+  top: 135px;
+  left: 15px;
+}
+
+/* line 57, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+.envelope {
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  background-image: url("../img/envelope.png");
+  background-size: cover;
+}
+
+/* line 64, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+address {
+  float: right;
+  margin: 0 0 0 5px;
+}
+
+/* line 67, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+address span {
+  display: block;
+}
+
+/* line 71, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+nav {
+  position: relative;
+}
+
+/* line 73, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+nav li {
+  display: inline-block;
+  margin: 15px 5px;
+}
+
+/* line 76, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+nav li a {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 80, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+nav li a:hover {
+  color: #45add8;
+}
+
+@media screen and (min-width: 860px) {
+  /* line 88, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header .logo, header .bubble-wrapper, header nav {
+    width: 30%;
+    display: inline-block;
+  }
+  /* line 92, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header .logo {
+    top: 0;
+  }
+  /* line 95, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header .bubble-wrapper {
+    width: 28%;
+    padding: 0;
+  }
+  /* line 98, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header .bubble-wrapper div.bubble {
+    top: -205px;
+    left: -30px;
+    width: 260px;
+  }
+  /* line 102, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header .bubble-wrapper div.bubble .bubble-content {
+    top: 150px;
+    left: 28px;
+  }
+  /* line 107, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header .bubble-wrapper span.bubble {
+    top: -50px;
+    left: 220px;
+  }
+  /* line 111, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header .bubble-wrapper span.bubble:nth-of-type(2) {
+    top: -58px;
+  }
+  /* line 114, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header .bubble-wrapper span.bubble:nth-of-type(3) {
+    top: -64px;
+  }
+  /* line 119, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header nav {
+    float: right;
+    top: 45px;
+    width: 41%;
+  }
+  /* line 123, /home/mikolaj/Documents/coderslab/choco/scss/partials/_header.scss */
+  header nav li {
+    margin: 0 3px;
+  }
+}
+
+/* line 1, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.main {
+  background-image: url("../img/pattern.jpg");
+  background-repeat: repeat;
+  box-shadow: 0 0 20px 0 #000;
+}
+
+/* line 6, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.top {
+  position: relative;
+  height: 263px;
+}
+
+/* line 9, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.top div {
+  position: absolute;
+}
+
+/* line 12, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.top .left {
+  z-index: 5;
+  left: 0;
+  max-width: 480px;
+}
+
+/* line 16, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.top .left h1,
+.top .left p {
+  color: #fff;
+  text-shadow: 0 0 1px #45add8;
+}
+
+/* line 21, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.top .left h1 {
+  margin: 50px 0 0 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 26, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.top .left p {
+  margin: 20px 0 0 0;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+/* line 32, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.top .right {
+  right: 0;
+}
+
+/* line 36, /home/mikolaj/Documents/coderslab/choco/scss/partials/_mainSection.scss */
+.top-img {
+  width: 482px;
+  height: 263px;
+  background-image: url("../img/top-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

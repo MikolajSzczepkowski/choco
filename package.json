@@ -1,0 +1,23 @@
+{
+  "name": "coderslabsass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikolajSzczepkowski/WAR_FRO_S_08_SASS_RWD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikolajSzczepkowski/WAR_FRO_S_08_SASS_RWD/issues"
+  },
+  "homepage": "https://github.com/MikolajSzczepkowski/WAR_FRO_S_08_SASS_RWD#readme",
+  "devDependencies": {
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

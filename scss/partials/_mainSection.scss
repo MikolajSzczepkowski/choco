@@ -1,0 +1,42 @@
+.main {
+  background-image: url("../img/pattern.jpg");
+  background-repeat: repeat;
+  box-shadow: 0 0 20px 0 #000;
+}
+.top {
+  position: relative;
+  height: 263px;
+  div {
+    position: absolute;
+  }
+  .left {
+    z-index: 5;
+    left: 0;
+    max-width: 480px;
+    h1,
+    p {
+      color: #fff;
+      text-shadow: 0 0 1px $accent-color;
+    }
+    h1 {
+      margin: 50px 0 0 0;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    p {
+      margin: 20px 0 0 0;
+      line-height: 22px;
+      font-size: 16px;
+    }
+  }
+  .right {
+    right: 0;
+  }
+}
+.top-img {
+  width: 482px;
+  height: 263px;
+  background-image: url("../img/top-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
