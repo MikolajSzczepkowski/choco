@@ -10,9 +10,8 @@ header {
   position: relative;
   top: 100px;
   height: 82px;
-  background-image: url("../img/logo.jpg");
+  @include backgroundImage ("../img/logo.jpg");
   background-size: contain;
-  background-repeat: no-repeat;
 }
 .bubble-wrapper {
   position: relative;
@@ -58,8 +57,7 @@ header {
   display: inline-block;
   width: 35px;
   height: 25px;
-  background-image: url("../img/envelope.png");
-  background-size: cover;
+  @include backgroundImage ("../img/envelope.png");
 }
 address {
   float: right;

@@ -1,0 +1,33 @@
+.intro {
+  background-image: url("../img/pattern.jpg");
+  background-repeat: repeat;
+  box-shadow: 0 0 20px 0 #000;
+}
+.top {
+  position: relative;
+  height: 263px;
+  div {
+    position: absolute;
+  }
+  .left {
+    z-index: 5;
+    left: 0;
+    max-width: 480px;
+    h2,
+    p {
+      color: #fff;
+      text-shadow: 0 0 1px $accent-color;
+    }
+    p {
+      margin: 20px 0 0 0;
+    }
+  }
+  .right {
+    right: 0;
+  }
+}
+.top-img {
+  width: 482px;
+  height: 263px;
+  @include backgroundImage ("../img/top-img.png");
+}

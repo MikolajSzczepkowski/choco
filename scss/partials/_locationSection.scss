@@ -1,0 +1,28 @@
+.location-img {
+  display: inline-block;
+  float: left;
+  width: 275px;
+  height: 212px;
+  @include backgroundImage ("../img/location.jpg");
+}
+.location {
+  .left {
+    display: inline-block;
+    float: left;
+    width: 75%;
+  }
+  .right {
+    display: inline-block;
+    float: right;
+    width: 25%;
+  }
+  p {
+    display: inline-block;
+    width: 360px;
+    padding: 0 0 0 15px;
+    font-size: 14px;
+  }
+  p:nth-of-type(2) {
+    padding: 0;
+  }
+}
